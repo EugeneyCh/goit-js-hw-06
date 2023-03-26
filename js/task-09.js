@@ -10,6 +10,7 @@ const bgBody = document.querySelector("body");
 const span = document.querySelector(".color");
 
 function onChangeColor(event) {
-  bgBody.style.background = getRandomHexColor();
-span.textContent=`${getRandomHexColor()}`  
-};
+  const randomColor = getRandomHexColor();
+  bgBody.style.background = randomColor;
+  span.textContent = `${randomColor}`;
+}
